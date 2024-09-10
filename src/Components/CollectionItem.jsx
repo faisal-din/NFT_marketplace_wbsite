@@ -1,24 +1,22 @@
-import pri_placeholder from '../assets/constants';
-import sec_placeholder_1 from '../assets/constants';
-import sec_placeholder_2 from '../assets/constants';
+import { assets } from '../assets/constants';
 
 import avatar from '../assets/Avatar-3.png';
 const CollectionItem = () => {
   return (
     <div className=" w-full rounded-xl  ">
       <div className=" flex flex-col gap-4">
-        <img src={pri_placeholder} alt="" className="scale-animation" />
+        <img src={assets.pri_placeholder} alt="" className="scale-animation" />
         <div className="flex-1 flex justify-center items-center gap-4  ">
           <div>
             <img
-              src={sec_placeholder_1}
+              src={assets.sec_placeholder_1}
               alt=""
               className="w-24 h-24 scale-animation"
             />
           </div>
           <div>
             <img
-              src={sec_placeholder_2}
+              src={assets.sec_placeholder_2}
               alt=""
               className="w-24 h-24 scale-animation"
             />

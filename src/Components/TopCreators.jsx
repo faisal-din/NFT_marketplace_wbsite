@@ -1,4 +1,4 @@
-import rocket from '../assets/constants';
+import { assets } from '../assets/constants';
 import CreatorCard from './CreatorCard';
 
 import { useContext } from 'react';
@@ -25,7 +25,7 @@ const TopCreators = () => {
           </div>
 
           <button className="nav-button scale-animation border-2 bg-transparent border-cta w-full sm:w-52  px-6 py-3 mt-3    ">
-            <img src={rocket} alt="" width={20} height={20} />
+            <img src={assets.rocket} alt="" width={20} height={20} />
             <p>Rankings</p>
           </button>
         </div>

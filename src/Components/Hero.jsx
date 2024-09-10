@@ -1,4 +1,4 @@
-import rocket from '../assets/constants';
+import { assets } from '../assets/constants';
 import hero_img from '../assets/hero_img.png';
 
 import { top_creators } from '../assets/constants';
@@ -21,7 +21,7 @@ const Hero = () => {
             sell art from more than 20k NFT artists.
           </p>
           <button className="nav-button scale-animation bg-cta w-full sm:w-52  px-6 py-3 mt-3    ">
-            <img src={rocket} alt="" width={20} height={20} />
+            <img src={assets.rocket} alt="" width={20} height={20} />
             <p>Get Started</p>
           </button>
           <div className="w-full flex items-center gap-8 mt-3">

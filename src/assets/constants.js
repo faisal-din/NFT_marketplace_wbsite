@@ -47,6 +47,9 @@ import user from './user.png';
 import menu from './menu.png';
 import close from './close.svg';
 import rocket from './rocket.png';
+import pri_placeholder from './pri_placeholder-1.png';
+import sec_placeholder_1 from './sec_placeholder_1.png';
+import sec_placeholder_2 from './sec_placeholder_2.png';
 
 export const assets = {
   logo,
@@ -54,6 +57,9 @@ export const assets = {
   menu,
   close,
   rocket,
+  pri_placeholder,
+  sec_placeholder_1,
+  sec_placeholder_2,
 };
 
 export const categories = [
