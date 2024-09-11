@@ -47,6 +47,7 @@ import user from './user.png';
 import menu from './menu.png';
 import close from './close.svg';
 import rocket from './rocket.png';
+import hero_img from './hero_img.png';
 import pri_placeholder from './pri_placeholder-1.png';
 import sec_placeholder_1 from './sec_placeholder_1.png';
 import sec_placeholder_2 from './sec_placeholder_2.png';
@@ -56,6 +57,7 @@ export const assets = {
   user,
   menu,
   close,
+  hero_img,
   rocket,
   pri_placeholder,
   sec_placeholder_1,
@@ -132,7 +134,7 @@ export const featured_nfts = [
 export const top_creators = [
   {
     creator_id: 1,
-    name: 'Jaydon Ekstrom Bothman',
+    name: 'Jaydon Bothman',
     bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: [avatar_1],
     change: '+2.3%',

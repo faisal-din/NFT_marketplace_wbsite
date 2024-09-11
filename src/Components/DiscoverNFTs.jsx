@@ -1,4 +1,5 @@
 import { assets } from '../assets/constants';
+import SingleNFT from './SingleNFT';
 
 const DiscoverNFTs = () => {
   return (
@@ -19,6 +20,14 @@ const DiscoverNFTs = () => {
           <img src={assets.rocket} alt="" width={20} height={20} />
           <p>See All</p>
         </button>
+      </div>
+
+      {/* NFTs */}
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-8 mt-8">
+        <SingleNFT />
+        <SingleNFT />
+        <SingleNFT />
       </div>
     </div>
   );
