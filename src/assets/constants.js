@@ -19,11 +19,6 @@ import avatar_18 from './Avatar-18.png';
 import avatar_19 from './Avatar-19.png';
 import avatar_20 from './Avatar-20.png';
 
-// import logo from '../assets/logo.png';
-// import user from '../assets/user.png';
-// import menu from '../assets/menu.png';
-// import close from '../assets/close.svg';
-// import rocket from '../assets/rocket.png';
 
 import art_image from './Art-Image.png';
 import art_icon from './Art-Icon.png';
