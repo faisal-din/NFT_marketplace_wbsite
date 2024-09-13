@@ -8,9 +8,8 @@ import instagram from '../assets/images/InstagramLogo.png';
 
 const Footer = () => {
   return (
-    <div className="max-container bg-secondary ">
+    <div className="px-10  sm:px-20 lg:px-40 py-10 sm:py-10 bg-secondary ">
       <div className=" flex justify-between flex-col xl:flex-row gap-8 xl:gap-4 w-full h-full xl:h-48">
-        {/* column one */}
         <div className="flex flex-col sm:flex-row mb-5">
           <div className="w-[330px] flex flex-col gap-8 ">
             {/* Logo */}
@@ -57,7 +56,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* column two */}
           <div className="w-[240px] flex flex-col gap-6 ">
             <h3 className="text-2xl ] text-white font-monospace font-bold">
               Explore
@@ -76,7 +74,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        {/* Newsletter */}
+
         <div className="flex-1 flex flex-col  gap-3 w-full ">
           <h3 className="text-2xl  text-white font-monospace font-bold mb-2">
             Join our weekly digest
@@ -85,7 +83,7 @@ const Footer = () => {
             Get exclusive promotions & updates straight to your inbox.
           </p>
 
-          <div className="bg-white w-full sm:w-[60%] h-14 flex  gap-3 pl-5 mt-5  rounded-[20px]">
+          <div className="bg-white w-full sm:w-[60%] xl:w-full h-14 flex  gap-3 pl-5 mt-5  rounded-[20px]">
             <input
               type="email"
               placeholder="Enter your email"
@@ -102,7 +100,7 @@ const Footer = () => {
 
       <div className=" mt-14">
         <hr className="flex-grow h-px bg-[#CCCCCC]" />
-        <p className="text-base text-[#CCCCCC]">
+        <p className="text-base text-[#CCCCCC] pt-2">
           © 2024 NFT Marketplace. All rights reserved.
         </p>
       </div>

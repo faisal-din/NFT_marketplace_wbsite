@@ -32,10 +32,10 @@ const CreatorCard = ({ id, image, name, volume }) => {
 };
 
 CreatorCard.propTypes = {
-  id: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  volume: PropTypes.number.isRequired,
+  id: PropTypes.number,
+  image: PropTypes.string,
+  name: PropTypes.string,
+  volume: PropTypes.number,
 };
 
 export default CreatorCard;

@@ -18,7 +18,7 @@ const CategoryCard = ({ image, name, icon }) => {
 
 CategoryCard.propTypes = {
   id: PropTypes.string,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string,
   name: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
 };
