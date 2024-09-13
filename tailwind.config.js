@@ -1,28 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// };
-
-/** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    fontSize: {
-      xs: ['12px', '16px'],
-      sm: ['14px', '20px'],
-      base: ['16px', '19.5px'],
-      lg: ['18px', '21.94px'],
-      xl: ['20px', '24.38px'],
-      '2xl': ['24px', '29.26px'],
-      '3xl': ['28px', '50px'],
-      '4xl': ['48px', '58px'],
-      '8xl': ['96px', '106px'],
-    },
     extend: {
+      backgroundImage: {
+        'highlight-img': "url('/src/assets/images/nft_highlight.png')",
+      },
       fontFamily: {
         monospace: ['Space Mono', 'sans-serif'],
         worksans: ['Work Sans', 'sans-serif'],
@@ -35,8 +18,6 @@ export default {
         celeste: ' #cccccc',
         jade: ' #00ac4f',
         masala: ' #3b3b3b80',
-        text: ' #ffffff',
-        // white: ' #ffffff1a',
       },
     },
   },

@@ -6,7 +6,7 @@ const Catrgories = () => {
   const { categories } = useContext(CreatorContext);
 
   return (
-    <div className="py-10 sm:py-16">
+    <div className="max-container">
       <p className=" text-3xl sm:text-4xl font-semibold">Browse Categories</p>
 
       {/* Categories */}

@@ -1,56 +1,56 @@
-import avatar_1 from './Avatar-1.png';
-import avatar_2 from './Avatar-2.png';
-import avatar_3 from './Avatar-3.png';
-import avatar_4 from './Avatar-4.png';
-import avatar_5 from './Avatar-5.png';
-import avatar_6 from './Avatar-6.png';
-import avatar_7 from './Avatar-7.png';
-import avatar_8 from './Avatar-8.png';
-import avatar_9 from './Avatar-9.png';
-import avatar_10 from './Avatar-10.png';
-import avatar_11 from './Avatar-11.png';
-import avatar_12 from './Avatar-12.png';
-import avatar_13 from './Avatar-13.png';
-import avatar_14 from './Avatar-14.png';
-import avatar_15 from './Avatar-15.png';
-import avatar_16 from './Avatar-16.png';
-import avatar_17 from './Avatar-17.png';
-import avatar_18 from './Avatar-18.png';
-import avatar_19 from './Avatar-19.png';
-import avatar_20 from './Avatar-20.png';
+import avatar_1 from './images/Avatar-1.png';
+import avatar_2 from './images/Avatar-2.png';
+import avatar_3 from './images/Avatar-3.png';
+import avatar_4 from './images/Avatar-4.png';
+import avatar_5 from './images/Avatar-5.png';
+import avatar_6 from './images/Avatar-6.png';
+import avatar_7 from './images/Avatar-7.png';
+import avatar_8 from './images/Avatar-8.png';
+import avatar_9 from './images/Avatar-9.png';
+import avatar_10 from './images/Avatar-10.png';
+import avatar_11 from './images/Avatar-11.png';
+import avatar_12 from './images/Avatar-12.png';
+import avatar_13 from './images/Avatar-13.png';
+import avatar_14 from './images/Avatar-14.png';
+import avatar_15 from './images/Avatar-15.png';
+import avatar_16 from './images/Avatar-16.png';
+import avatar_17 from './images/Avatar-17.png';
+import avatar_18 from './images/Avatar-18.png';
+import avatar_19 from './images/Avatar-19.png';
+import avatar_20 from './images/Avatar-20.png';
 
-// import logo from '../assets/logo.png';
-// import user from '../assets/user.png';
-// import menu from '../assets/menu.png';
-// import close from '../assets/close.svg';
-// import rocket from '../assets/rocket.png';
+import art_image from './images/Art-Image.png';
+import art_icon from './images/Art-Icon.png';
+import photography_image from './images/Photography-Image.png';
+import photography_icon from './images/Photography-Icon.png';
+import music_image from './images/Music-Image.png';
+import music_icon from './images/Music-Icon.png';
+import collectibles_image from './images/Collectibles-Image.png';
+import collectibles_icon from './images/Collectibles-Icon.png';
+import video_image from './images/Video-Image.png';
+import video_icon from './images/Video-Icon.png';
+import virtual_worlds_image from './images/Virtual-Worlds-Image.png';
+import virtual_worlds_icon from './images/Virtual-Worlds-Icon.png';
+import sports_image from './images/Sports-Image.png';
+import sports_icon from './images/Sports-Icon.png';
+import utility_image from './images/Utility-Image.png';
+import utility_icon from './images/Utility-Icon.png';
 
-import art_image from './Art-Image.png';
-import art_icon from './Art-Icon.png';
-import photography_image from './Photography-Image.png';
-import photography_icon from './Photography-Icon.png';
-import music_image from './Music-Image.png';
-import music_icon from './Music-Icon.png';
-import collectibles_image from './Collectibles-Image.png';
-import collectibles_icon from './Collectibles-Icon.png';
-import video_image from './Video-Image.png';
-import video_icon from './Video-Icon.png';
-import virtual_worlds_image from './Virtual-Worlds-Image.png';
-import virtual_worlds_icon from './Virtual-Worlds-Icon.png';
-import sports_image from './Sports-Image.png';
-import sports_icon from './Sports-Icon.png';
-import utility_image from './Utility-Image.png';
-import utility_icon from './Utility-Icon.png';
+import logo from './images/logo.png';
+import user from './images/user.png';
+import menu from './images/menu.png';
+import close from './images/close.svg';
+import hero_img from './images/hero_img.png';
+import rocket from './images/rocket.png';
+import pri_placeholder from './images/pri_placeholder-1.png';
+import sec_placeholder_1 from './images/sec_placeholder_1.png';
+import sec_placeholder_2 from './images/sec_placeholder_2.png';
+import nft_highlight from './images/nft_highlight.png';
+import eye_icon from './images/Eye.png';
 
-import logo from './logo.png';
-import user from './user.png';
-import menu from './menu.png';
-import close from './close.svg';
-import rocket from './rocket.png';
-import hero_img from './hero_img.png';
-import pri_placeholder from './pri_placeholder-1.png';
-import sec_placeholder_1 from './sec_placeholder_1.png';
-import sec_placeholder_2 from './sec_placeholder_2.png';
+import info_card_1 from './images/infocard-1.png';
+import info_card_2 from './images/infocard-2.png';
+import info_card_3 from './images/infocard-3.png';
 
 export const assets = {
   logo,
@@ -62,8 +62,33 @@ export const assets = {
   pri_placeholder,
   sec_placeholder_1,
   sec_placeholder_2,
+  nft_highlight,
+  eye_icon,
 };
 
+export const info_cards = [
+  {
+    id: 1,
+    image: [info_card_1],
+    title: 'Setup Your wallet',
+    description:
+      'Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.',
+  },
+  {
+    id: 2,
+    image: [info_card_2],
+    title: 'Create Collection',
+    description:
+      'Upload your work and setup your collection. Add a description, social links and floor price.',
+  },
+  {
+    id: 3,
+    image: [info_card_3],
+    title: 'Start Earning',
+    description:
+      'Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.',
+  },
+];
 export const categories = [
   {
     category_id: 1,
@@ -135,7 +160,7 @@ export const top_creators = [
   {
     creator_id: 1,
     name: 'Jaydon Bothman',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    bio: 'Visual storyteller exploring the NFT space with vibrant works.',
     image: [avatar_1],
     change: '+2.3%',
     nfts_sold: 523,

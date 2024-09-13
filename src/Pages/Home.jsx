@@ -9,7 +9,7 @@ import NewsLetter from '../Components/NewsLetter';
 
 const Home = () => {
   return (
-    <div className="px-10  sm:px-20 lg:px-32">
+    <div>
       <Hero />
       <TrendingCollections />
       <TopCreators />

@@ -1,11 +1,11 @@
 import { assets } from '../assets/constants';
-import hero_img from '../assets/hero_img.png';
+import hero_img from '../assets/images/hero_img.png';
 
 import { top_creators } from '../assets/constants';
 
 const Hero = () => {
   return (
-    <section className="py-10 sm:py-16">
+    <section className="max-container">
       <div className="w-full flex flex-col md:flex-row gap-8">
         {/* Hero Right */}
         <div className=" flex-1 flex flex-col gap-5">
@@ -20,10 +20,12 @@ const Hero = () => {
             NFT marketplace UI created with Anima for Figma. Collect, buy and
             sell art from more than 20k NFT artists.
           </p>
-          <button className="nav-button scale-animation bg-cta w-full sm:w-52  px-6 py-3 mt-3    ">
-            <img src={assets.rocket} alt="" width={20} height={20} />
-            <p>Get Started</p>
-          </button>
+          <div className="hidden sm:flex">
+            <button className="nav-button scale-animation bg-cta w-full sm:w-52  px-6 py-3 mt-3    ">
+              <img src={assets.rocket} alt="" width={20} height={20} />
+              <p>Get Started</p>
+            </button>
+          </div>
           <div className="w-full flex items-center gap-8 mt-3">
             <div className="flex flex-col gap-2">
               <p className="text-2xl font-bold font-monospace">240k+</p>

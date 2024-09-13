@@ -10,7 +10,7 @@ const TopCreators = () => {
   console.log(top_creators);
 
   return (
-    <div className="py-10 sm:py-16">
+    <div className="max-container">
       <div className="container mx-auto px-4">
         {/* Headline */}
 

@@ -2,7 +2,7 @@ import CollectionItem from './CollectionItem';
 
 const TrendingCollections = () => {
   return (
-    <div className="py-10 sm:py-16">
+    <div className="max-container">
       <div className="container mx-auto px-4">
         {/* Headline */}
         <div className="mb-10 md:mb-14">

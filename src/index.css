@@ -4,12 +4,8 @@
 
 @layer utilities {
   .max-container {
-    padding-left: 12rem; /* equivalent to px-48 */
-    padding-right: 12rem; /* equivalent to px-48 */
-    padding-top: 5rem; /* equivalent to py-20 */
-    padding-bottom: 5rem; /* equivalent to py-20 */
+    @apply px-10  sm:px-20 lg:px-40 py-10 sm:py-16;
   }
-
   .scale-animation {
     @apply hover:scale-90 ease-out transition duration-500;
   }
@@ -17,7 +13,7 @@
     @apply rounded-[20px] text-white text-base;
   }
   .nav-button {
-    @apply flex items-center justify-center   gap-3 rounded-[20px] text-white font-semibold;
+    @apply flex items-center justify-center   gap-[10px] rounded-[20px] text-white font-semibold;
   }
   .nav-sidebar {
     @apply absolute left-0 right-0  backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto lg:hidden block;
