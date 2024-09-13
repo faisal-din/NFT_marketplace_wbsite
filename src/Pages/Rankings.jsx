@@ -115,4 +115,5 @@ UserProfile.propTypes = {
   volume: PropTypes.number,
 };
 
+
 export default Rankings;
