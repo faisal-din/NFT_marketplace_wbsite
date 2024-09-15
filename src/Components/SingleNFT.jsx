@@ -50,6 +50,7 @@ const SingleNFT = ({ nft }) => {
             </div>
           </div>
         </div>
+        
       </NavLink>
     </div>
   );
