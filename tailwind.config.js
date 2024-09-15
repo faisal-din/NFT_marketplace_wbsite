@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         'highlight-img': "url('/src/assets/images/nft_highlight.png')",
+        'artist-img': "url('/src/assets/images/artist_bg-img.png')",
       },
       fontFamily: {
         monospace: ['Space Mono', 'sans-serif'],

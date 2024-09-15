@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { assets } from '../assets/constants';
 import { CreatorContext } from '../context/CreatorContext';
 import CountDownTimer from './CountDownTimer';
+import { NavLink } from 'react-router-dom';
 
 const Banner = () => {
   const { top_creators } = useContext(CreatorContext);
@@ -31,10 +32,17 @@ const Banner = () => {
 
               {/* button */}
               <div className="flex">
-                <button className=" nav-button scale-animation border-2 bg-white border-cta  px-12 py-3 mt-3">
-                  <img src={assets.eye_icon} alt="" width={20} height={20} />
-                  <p className="text-primary">See All</p>
-                </button>
+                <NavLink to="/marketplace">
+                  <button
+                    onClick={() => {
+                      scrollTo(0, 0);
+                    }}
+                    className=" nav-button scale-animation border-2 bg-white border-cta  px-12 py-3 mt-3"
+                  >
+                    <img src={assets.eye_icon} alt="" width={20} height={20} />
+                    <p className="text-primary">See All</p>
+                  </button>
+                </NavLink>
               </div>
             </div>
 

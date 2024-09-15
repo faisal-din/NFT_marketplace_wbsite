@@ -1,6 +1,6 @@
 import { assets } from '../assets/constants';
-
 import avatar from '../assets/images/Avatar-3.png';
+
 const CollectionItem = () => {
   return (
     <div className=" w-full rounded-xl  ">

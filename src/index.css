@@ -4,7 +4,7 @@
 
 @layer utilities {
   .max-container {
-    @apply px-10  sm:px-20 lg:px-40 py-10 sm:py-16;
+    @apply px-10  sm:px-20 xl:px-40 py-10 sm:py-16;
   }
   .scale-animation {
     @apply hover:scale-90 ease-out transition duration-500;

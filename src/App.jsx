@@ -21,7 +21,7 @@ function App() {
         <Route path="/rankings" element={<Rankings />} />
         <Route path="/connect-a-wallet" element={<ConnectaWallet />} />
         <Route path="/sign-up" element={<CreateAccount />} />
-        <Route path="/artist" element={<Artist />} />
+        <Route path="/artist/:name" element={<Artist />} />
         <Route path="/nft-page" element={<NFTpage />} />
       </Routes>
 

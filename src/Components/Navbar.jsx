@@ -60,7 +60,7 @@ const Navbar = () => {
           <button className="relative lg:hidden flex items-center justify-center p-2 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white ">
             <img
               onClick={toggleMenu}
-              src={visible ? close : assets.menu}
+              src={visible ? assets.close : assets.menu}
               alt=""
               className="w-6 h-6 cursor-pointer  "
             />

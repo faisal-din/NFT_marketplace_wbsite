@@ -38,7 +38,7 @@ const HowItWorks = () => {
 };
 
 InfoCard.propTypes = {
-  image: PropTypes.string.isRequired,
+  image: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };

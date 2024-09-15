@@ -1,10 +1,10 @@
-import subscribe from '../assets/images/subscribe.png';
 import { NavLink } from 'react-router-dom';
 import { assets } from '../assets/constants';
-import discord from '../assets/images/DiscordLogo.png';
-import youtube from '../assets/images/YoutubeLogo.png';
-import twitter from '../assets/images/TwitterLogo.png';
-import instagram from '../assets/images/InstagramLogo.png';
+import subscribe from '../assets/icons/subscribe.png';
+import discord from '../assets/icons/DiscordLogo.png';
+import youtube from '../assets/icons/YoutubeLogo.png';
+import twitter from '../assets/icons/TwitterLogo.png';
+import instagram from '../assets/icons/InstagramLogo.png';
 
 const Footer = () => {
   return (
@@ -13,18 +13,25 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row mb-5">
           <div className="w-[330px] flex flex-col gap-8 ">
             {/* Logo */}
-            <div className="flex gap-4">
-              <img
-                src={assets.logo}
-                alt="logo"
-                className=""
-                width={32}
-                height={32}
-              />
-              <p className="text-white font-monospace text-lg font-semibold">
-                NFT Marketplace
-              </p>
-            </div>
+            <NavLink to="/">
+              <div
+                onClick={() => {
+                  scrollTo(0, 0);
+                }}
+                className="flex gap-4 cursor-pointer"
+              >
+                <img
+                  src={assets.logo}
+                  alt="logo"
+                  className=""
+                  width={32}
+                  height={32}
+                />
+                <p className="text-white font-monospace text-lg font-semibold">
+                  NFT Marketplace
+                </p>
+              </div>
+            </NavLink>
 
             <div className="w-[60%] flex flex-col gap-5 text-base text-[#CCCCCC]">
               <p>NFT marketplace UI created with Anima for Figma.</p>
@@ -63,13 +70,31 @@ const Footer = () => {
             {/* NavLinks */}
             <div className=" flex flex-col gap-5 text-base text-[#CCCCCC]">
               <NavLink to="/marketplace">
-                <p className="      ">Marketplace</p>
+                <p
+                  onClick={() => {
+                    scrollTo(0, 0);
+                  }}
+                >
+                  Marketplace
+                </p>
               </NavLink>
               <NavLink to="/rankings" className="">
-                <p className="  ">Rankings</p>
+                <p
+                  onClick={() => {
+                    scrollTo(0, 0);
+                  }}
+                >
+                  Rankings
+                </p>
               </NavLink>
               <NavLink to="/connect-a-wallet" className="">
-                <p className="   ">Connect a wallet</p>
+                <p
+                  onClick={() => {
+                    scrollTo(0, 0);
+                  }}
+                >
+                  Connect a wallet
+                </p>
               </NavLink>
             </div>
           </div>

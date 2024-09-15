@@ -1,7 +1,7 @@
 import { assets } from '../assets/constants';
 import hero_img from '../assets/images/hero_img.png';
-
 import { top_creators } from '../assets/constants';
+import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -47,33 +47,39 @@ const Hero = () => {
         </div>
 
         {/* Hero Left */}
-
-        <div className="flex-1 ">
-          <div className="max-w-md mx-auto scale-animation">
-            <img src={hero_img} alt="Hero" className="w-full rounded-t-xl" />
-            <div className="bg-secondary p-5 rounded-b-xl">
-              <h2 className="text-2xl font-semibold mb-3">Space Walking</h2>
-              <div className="flex items-center gap-3">
-                <img
-                  src={top_creators[0].image}
-                  alt="Avatar"
-                  className="w-10 h-10 rounded-full"
-                />
-                <div>
-                  <p className="text-lg font-semibold">
-                    {top_creators[0].name}
-                  </p>
-                  <p className="text-base text-gray-400">
-                    Total Sales:{' '}
-                    <span className="text-white font-semibold font-monospace">
-                      {top_creators[0].volume}
-                    </span>
-                  </p>
+        <NavLink to="/nft-page">
+          <div
+            onClick={() => {
+              scrollTo(0, 0);
+            }}
+            className="flex-1 "
+          >
+            <div className="max-w-md mx-auto scale-animation">
+              <img src={hero_img} alt="Hero" className="w-full rounded-t-xl" />
+              <div className="bg-secondary p-5 rounded-b-xl">
+                <h2 className="text-2xl font-semibold mb-3">Space Walking</h2>
+                <div className="flex items-center gap-3">
+                  <img
+                    src={top_creators[0].image}
+                    alt="Avatar"
+                    className="w-10 h-10 rounded-full"
+                  />
+                  <div>
+                    <p className="text-lg font-semibold">
+                      {top_creators[0].name}
+                    </p>
+                    <p className="text-base text-gray-400">
+                      Total Sales:{' '}
+                      <span className="text-white font-semibold font-monospace">
+                        {top_creators[0].volume}
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </NavLink>
       </div>
     </section>
   );

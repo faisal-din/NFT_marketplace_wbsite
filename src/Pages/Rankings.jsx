@@ -1,44 +1,58 @@
-import { top_creators } from '../assets/constants';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { useContext } from 'react';
+import { CreatorContext } from '../context/CreatorContext';
 
-const UserProfile = ({ id, image, name, change, nfts_sold, volume }) => {
+const UserProfile = ({ creator }) => {
+  const { setSelectedCreator } = useContext(CreatorContext);
+
   return (
     <div className="grid grid-cols-[0.2fr_2fr_1fr] sm:grid-cols-[0.2fr_2fr_1fr_1fr] lg:grid-cols-[0.2fr_2fr_1fr_1fr_1fr] items-center bg-secondary p-3 px-5 mt-5 rounded-3xl shadow-md gap-4">
       {/* Rank */}
       <div className="w-7 h-7 text-center bg-primary text-[#858584] text-lg  rounded-full">
-        {id}
+        {creator.creator_id}
       </div>
+
       {/* Avatar and Name */}
-      <div className="flex items-center space-x-3 scale-animation cursor-pointer">
-        <img
-          src={image}
-          alt="Avatar"
-          className="w-6 h-6  sm:w-14 sm:h-14 rounded-full"
-        />
-        <div className="text-white text-lg sm:text-[22px] font-semibold">
-          {name}
+      <NavLink to={`/artist/${creator.name}`}>
+        <div
+          onClick={() => {
+            setSelectedCreator(creator);
+            scrollTo(0, 0);
+          }}
+          className="flex items-center space-x-3 scale-animation cursor-pointer"
+        >
+          <img
+            src={creator.avatar}
+            alt="Avatar"
+            className="w-6 h-6  sm:w-14 sm:h-14 rounded-full"
+          />
+          <div className="text-white text-lg sm:text-[22px] font-semibold">
+            {creator.name}
+          </div>
         </div>
-      </div>
+      </NavLink>
 
       {/* Percentage change */}
       <div className="text-green-400 font-medium text-center font-monospace hidden sm:block">
-        {change}
+        {creator.change}
       </div>
 
       {/* NFTs sold */}
       <div className="text-white text-center font-monospace hidden lg:block">
-        {nfts_sold}
+        {creator.nfts_sold}
       </div>
 
       {/* ETH Value */}
       <div className="text-white text-sm sm:text-base text-center font-monospace">
-        {volume}
+        {creator.volume}
       </div>
     </div>
   );
 };
 
 const Rankings = () => {
+  const { top_creators } = useContext(CreatorContext);
   return (
     <div>
       <div className="max-container flex flex-col gap-8">
@@ -91,15 +105,7 @@ const Rankings = () => {
           <div className=" text-[#858584] text-base text-center">Volume</div>
         </div>
         {top_creators.map((creator) => (
-          <UserProfile
-            key={creator.creator_id}
-            id={creator.creator_id}
-            image={creator.image}
-            name={creator.name}
-            change={creator.change}
-            nfts_sold={creator.nfts_sold}
-            volume={creator.volume}
-          />
+          <UserProfile key={creator.creator_id} creator={creator} />
         ))}
       </div>
     </div>
@@ -107,12 +113,7 @@ const Rankings = () => {
 };
 
 UserProfile.propTypes = {
-  id: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  change: PropTypes.string.isRequired,
-  nfts_sold: PropTypes.number.isRequired,
-  volume: PropTypes.number,
+  creator: PropTypes.object.isRequired,
 };
 
 export default Rankings;

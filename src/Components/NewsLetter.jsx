@@ -1,5 +1,5 @@
 import newsletter_img from '../assets/images/newsletter_img.png';
-import subscribe from '../assets/images/subscribe.png';
+import subscribe from '../assets/icons/subscribe.png';
 
 const NewsLetter = () => {
   return (
