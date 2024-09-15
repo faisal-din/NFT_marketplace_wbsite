@@ -116,4 +116,5 @@ UserProfile.propTypes = {
   creator: PropTypes.object.isRequired,
 };
 
+
 export default Rankings;
