@@ -1,6 +1,4 @@
-import PropTypes from 'prop-types';
 import wallet_img from '../assets/images/Image-Placeholder.png';
-
 import user_icon from '../assets/icons/user_icon.png';
 import envelope_icon from '../assets/icons/mail_icon.png';
 import password_icon from '../assets/icons/LockKey.png';
@@ -79,11 +77,6 @@ const InputButton = ({ icon, label, type, placeholder }) => {
   );
 };
 
-InputButton.propTypes = {
-  icon: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  placeholder: PropTypes.string.isRequired,
-};
+
 
 export default CreateAccount;
