@@ -2,8 +2,6 @@ import { useContext } from 'react';
 import { CreatorContext } from '../context/CreatorContext';
 import { NavLink } from 'react-router-dom';
 
-import PropTypes from 'prop-types';
-
 const CategoryCard = ({ category }) => {
   return (
     <div className="w-[150px] h-52  sm:w-60 sm:h-80 rounded-3xl overflow-hidden relative scale-animation">
@@ -54,12 +52,4 @@ const Catrgories = () => {
   );
 };
 
-CategoryCard.propTypes = {
-  category: PropTypes.shape({
-    id: PropTypes.string,
-    image: PropTypes.array.isRequired,
-    name: PropTypes.string.isRequired,
-    icon: PropTypes.array.isRequired,
-  }).isRequired,
-};
 export default Catrgories;
