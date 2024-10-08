@@ -1,4 +1,3 @@
-import { PropTypes } from 'prop-types';
 import { info_cards } from '../assets/constants';
 
 const InfoCard = ({ image, title, description }) => {
@@ -37,10 +36,5 @@ const HowItWorks = () => {
   );
 };
 
-InfoCard.propTypes = {
-  image: PropTypes.array.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-};
 
 export default HowItWorks;
