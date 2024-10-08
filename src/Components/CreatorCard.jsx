@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+
 import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { CreatorContext } from '../context/CreatorContext';
@@ -42,15 +42,6 @@ const CreatorCard = ({ creator }) => {
       </div>
     </NavLink>
   );
-};
-
-CreatorCard.propTypes = {
-  creator: PropTypes.shape({
-    creator_id: PropTypes.number,
-    avatar: PropTypes.array.isRequired,
-    name: PropTypes.string.isRequired,
-    volume: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 export default CreatorCard;
