@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
 import { CreatorContext } from '../context/CreatorContext';
-import PropTypes from 'prop-types';
+
 
 const SingleNFT = ({ nft }) => {
   const { setSelectedNFT } = useContext(CreatorContext);
@@ -56,8 +56,5 @@ const SingleNFT = ({ nft }) => {
   );
 };
 
-SingleNFT.propTypes = {
-  nft: PropTypes.object,
-};
 
 export default SingleNFT;
