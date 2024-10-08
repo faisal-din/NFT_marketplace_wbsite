@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import wallet_img from '../assets/images/Image-Placeholder.png';
 import metamask_icon from '../assets/icons/metamask.png';
 import wallet_icon from '../assets/icons/wallet_connect.png';
@@ -42,8 +41,5 @@ const WalletButton = ({ icon, label }) => {
   );
 };
 
-WalletButton.propTypes = {
-  icon: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-};
+
 export default ConnectaWallet;
