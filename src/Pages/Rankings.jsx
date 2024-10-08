@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import { useContext } from 'react';
 import { CreatorContext } from '../context/CreatorContext';
 
@@ -111,10 +110,5 @@ const Rankings = () => {
     </div>
   );
 };
-
-UserProfile.propTypes = {
-  creator: PropTypes.object.isRequired,
-};
-
 
 export default Rankings;
